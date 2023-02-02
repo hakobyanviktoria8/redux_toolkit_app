@@ -1,18 +1,22 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import {
-  decrement,
-  increment,
-  incrementByAmount,
-  selectCount,
-} from "./counterSlice";
+// import {
+//   decrement,
+//   increment,
+//   incrementByAmount,
+//   selectCount,
+// } from "./counterSlice";
+import { counterSlice, selectCount } from "./counterSlice";
 import styles from "./Counter.module.css";
+const { decrement, increment, incrementByAmount } = counterSlice.actions;
 
 export function Counter() {
   const count = useSelector(selectCount);
   const dispatch = useDispatch();
   const [incrementAmount, setIncrementAmount] = useState("2");
 
+  // another way take state value
+  console.log(counterSlice.getInitialState().value);
   const incrementValue = Number(incrementAmount) || 0;
 
   return (
