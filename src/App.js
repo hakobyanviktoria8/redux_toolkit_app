@@ -1,4 +1,5 @@
 import React from "react";
+import { Carts } from "./features/carts/Carts";
 import { Counter } from "./features/counter/Counter";
 import "./styles/App.css";
 
@@ -7,6 +8,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Counter />
+
+        <Carts />
 
         <div className="footer">
           <span>Learn </span>

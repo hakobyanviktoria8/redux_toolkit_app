@@ -16,7 +16,8 @@ export function Counter() {
   const [incrementAmount, setIncrementAmount] = useState("2");
 
   // another way take state value
-  console.log(counterSlice.getInitialState().value);
+  // console.log(counterSlice.getInitialState().value);
+
   const incrementValue = Number(incrementAmount) || 0;
 
   return (
