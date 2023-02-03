@@ -6,7 +6,7 @@ import { useSelector, useDispatch } from "react-redux";
 //   incrementByAmount,
 //   selectCount,
 // } from "./counterSlice";
-import { counterSlice, selectCount } from "./counterSlice";
+import counterSlice, { selectCount } from "./counterSlice";
 import styles from "./Counter.module.css";
 const { decrement, increment, incrementByAmount } = counterSlice.actions;
 
