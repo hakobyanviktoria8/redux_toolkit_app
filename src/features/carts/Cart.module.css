@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .cart {
@@ -10,4 +11,10 @@
   height: 300px;
   margin: 10px;
   padding: 10px;
+}
+
+.cartProductWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
