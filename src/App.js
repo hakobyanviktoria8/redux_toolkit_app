@@ -1,5 +1,6 @@
 import React from "react";
 import { Carts } from "./features/carts/Carts";
+import { CartsDataJson } from "./features/carts/CartsDataJson";
 import { Counter } from "./features/counter/Counter";
 import "./styles/App.css";
 
@@ -7,6 +8,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <CartsDataJson />
+
         <Counter />
 
         <Carts />
